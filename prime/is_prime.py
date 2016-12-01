@@ -13,5 +13,6 @@ def is_prime(num):
         	return False
     else:
     	return False
-num = input('Enter a number to find out if it a prime number')
-print is_prime(num)
+num = input('Enter a number to find prime numbers')
+prime_generator = filter(is_prime, range(2, num))
+print prime_generator
